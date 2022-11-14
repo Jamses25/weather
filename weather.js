@@ -1,7 +1,7 @@
 window.addEventListener("load",(initial()));
 function initial(){
     let cityName = document.querySelector(".search-area").value;
-    const api = "https://api.openweathermap.org/data/2.5/weather?q="+ cityName +"&units=metric&appid=Your Api Key";
+    const api = "https://api.openweathermap.org/data/2.5/weather?q="+ cityName +"&units=metric&appid=68faf8ac7783eda3c4f2a33db7dcaa0b";
     fetch (api)
     .then((response) => {
         return response.json();
